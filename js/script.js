@@ -1,30 +1,38 @@
-"use strict"
+for (let i = 0; i < 3; i++) {
+    console.log(i);
+    for (let j = 0; j < 3; j++) {
+        console.log(j);
+    }
+}
 
-let num = 50;
+// *
+// **
+// ***
+// ****
+// *****
+// ******
 
-// while (num < 55) {
-//     console.log(num);
-//     num++;
-// }
+let result = '';
+const length = 9;
 
-// do {
-//     console.log(num);
-//     num++;
-// }
+for (let i = 1; i < length; i++) {
 
-// while (num < 55);
-
-// for (let i = 1; i < 0; i++) {
-//     console.log(num);
-//     num++;
-// }
-
-for (let i = 1; i < 10; i++) {
-    if (i === 6) {
-        // break;
-        continue;
+    for (let j = 0; j < i; j++) {
+        result += "*";
     }
 
+    result += '\n';
+}
 
-    console.log(i);
+console.log(result);
+
+first: for (let i = 0; i < 3; i++) {
+    console.log(`First level: ${i}`);
+    for (let j = 0; j < 3; j++) {
+        console.log(`Second level: ${j}`);
+        for (let k = 0; k < 3; k++) {
+            if (k === 2) continue first;
+            console.log(`First level: ${k}`);
+        }
+    }
 }
