@@ -1,33 +1,30 @@
-// const hamburger = 5;
-// const fries = 0;
+"use strict"
 
-// if (hamburger && fries) {
-//     console.log('Я сыт!');
+let num = 50;
+
+// while (num < 55) {
+//     console.log(num);
+//     num++;
 // }
 
-// const hamburger = 3;
-// const fries = 1;
-// const cola = 0;
-
-// if (hamburger === 3 && cola === 1 && fries) {
-//     console.log('Все сыты!');
-// } else {
-//     console.log('Мы уходим');
+// do {
+//     console.log(num);
+//     num++;
 // }
 
-const hamburger = 3;
-const fries = 3;
-const cola = 0;
-const nuggets = 2;
+// while (num < 55);
 
-if (hamburger === 3 && cola === 2 || fries === 3 && nuggets) {
-    console.log('Все довольны!');
-} else {
-    console.log('Мы уходим');
+// for (let i = 1; i < 0; i++) {
+//     console.log(num);
+//     num++;
+// }
+
+for (let i = 1; i < 10; i++) {
+    if (i === 6) {
+        // break;
+        continue;
+    }
+
+
+    console.log(i);
 }
-
-console.log(hamburger || cola || fries);
-
-let johnReport, alexReport, samReport, mariaReport = 'done';
-
-console.log(johnReport || alexReport || samReport || mariaReport);
